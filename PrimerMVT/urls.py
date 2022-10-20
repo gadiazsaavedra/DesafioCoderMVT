@@ -19,5 +19,8 @@ from .views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("saludo/", saludo),
+    path("lista/", lista),
+    path('home', home),
+    path('agrega-familia/<nombre>/<apellido>/<edad>/<año_nacimiento>', agregar),
+    path('agrega-familia/', agregar_main),
 ]

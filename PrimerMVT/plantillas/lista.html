@@ -9,8 +9,10 @@
 <body>
 
     {%for familiar in Familiar_cercano%}
-        <p>
+        <p style="background-color: blue; font-size: 100px; ">
             {{familiar.nombre}}
+            {{familiar.apellido}}
+            {{familiar.edad}}
         </p>
     {%endfor%}
 </body>
