@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import *
+from PrimerMVT.views import lista, home, agregar_main, agregar
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
     path("lista/", lista),
-    path('home', home),
-    path('agrega-familia/<nombre>/<apellido>/<edad>/<año_nacimiento>', agregar),
-    path('agrega-familia/', agregar_main),
+    path("home", home),
+    path("agrega-familia/<nombre>/<apellido>/<edad>/<año_nacimiento>", agregar),
+    path("agrega-familia/", agregar_main),
 ]

@@ -55,7 +55,7 @@ ROOT_URLCONF = 'PrimerMVT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/User/Desktop/DjangoInstalacion/PrimerMVT/PrimerMVT/plantillas'],
+        'DIRS': [f"{BASE_DIR}/PrimerMVT/PrimerMVT/plantillas"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
